@@ -195,8 +195,8 @@ const schema: SchemaConfig = {
 
 // social links
 const sameAs: SameAsConfig = {
-  threads: "https://www.threads.com/@once_ui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
+  threads: "https://www.threads.com/@sohail.code",
+  linkedin: "https://www.linkedin.com/in/md-sohail-a63a321b1/",
   discord: "https://discord.com/invite/5EyAQ4eNdS",
 };
 

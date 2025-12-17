@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Kranthi",
-  lastName: "Kumar",
-  name: `Kranthi The Leader`,
-  role: "System Engineer",
-  avatar: "/images/avatar.png",
-  email: "Keranthi@gmail.com",
+  firstName: "Sohail",
+  lastName: "Patel",
+  name: `Sohail Patel`,
+  role: "Software Developer",
+  avatar: "/images/avatar.jpeg",
+  email: "sohail345patel@gmail.com",
   location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Telugu", "Hindi"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["English", "Hindi", "Telugu", "Kannada"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -24,17 +24,17 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "",
+    link: "https://github.com/sohail005",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/kranthi-kumar-3b4b621ba/",
+    link: "https://www.linkedin.com/in/md-sohail-a63a321b1/",
   },
   {
     name: "Threads",
     icon: "threads",
-    link: "https://www.threads.com/@kranthi078?xmt=AQF0yyWEBFeNBLw52btgssqzoV-6cWIu6sx4KEX5_YwBhx4",
+    link: "https://www.threads.com/@sohail.code",
   },
   {
     name: "Email",
@@ -47,14 +47,14 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.png",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
+  title: `${person.firstName}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Politician - I believe that POLITICS should only change the feature of this.</>,
+  headline: <>Software Developer - Code, create, and innovate — every single day.</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">KRANTHI</strong>{" "}
+        <strong className="ml-4">SOHAIL PATEL</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
@@ -65,8 +65,8 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Kranthi, a System Engineer at Revalsys Technologies PVT LTD{" "}
-      <br />with a passion for technology and problem-solving.
+      I’m a software developer who transforms ideas into clean, scalable, and user-focused digital products.{" "}
+      <br />With a passion for problem-solving and modern technology, I build solutions that deliver real impact.
     </>
   ),
 };
@@ -92,7 +92,8 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Kranthi is a dedicated System Engineer at Revalsys Technologies, known for his strong technical expertise and problem-solving skills. He plays a key role in managing and optimizing IT systems, ensuring smooth operations, security, and performance across projects. Kranthi is passionate about leveraging technology to improve efficiency and deliver reliable solutions that support the company’s goals.
+        I’m a software developer who transforms ideas into clean, scalable, and user-focused digital products.
+        With a passion for problem-solving and modern technology, I build solutions that deliver real impact.
       </>
     ),
   },
@@ -101,34 +102,75 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "Revalsys Technologies PVT LTD.",
-        timeframe: "2022 - Present",
-        role: "Senior System Engineer",
+        company: "Mufeed Products and Services Pvt Ltd.",
+        timeframe: "Feb 2022 - Nov 2023",
+        role: "React & React Native Developer",
         achievements: [
           <>
-            Spearheaded a server migration project that improved deployment efficiency and reduced maintenance costs by 30%.
+            Learned how to structure and organize a scalable React Native project
           </>,
           <>
-            Automated routine monitoring tasks using scripting, which increased operational efficiency and reduced manual workload.
+            Gained hands-on experience with component reusability and modular coding
           </>,
           <>
-            Consistently recognized for delivering reliable, high-quality technical support and system optimization.
+            Learned the importance of performance optimization and clean code
           </>,
-        ],
-        // images: [
-        //   // optional: leave the array empty if you don't want to display images
-        //   {
-        //     src: "/images/projects/project-01/cover-01.jpg",
-        //     alt: "Project",
-        //     width: 16,
-        //     height: 9,
-        //   },
-        // ],
+        ]
+      },
+      {
+        company: "Revalsys Technologies PVT LTD.",
+        timeframe: "Dec 2021 - Feb 2025",
+        role: "React Native Developer",
+        achievements: [
+          <>
+            Gained experience in writing reusable, modular, and clean code.
+          </>,
+          <>
+            Built and deployed apps end-to-end, improving knowledge of the app release cycle.
+          </>,
+          <>
+            Strengthened problem-solving through handling complex bugs and platform-specific issue.
+          </>,
+          <>
+            Improved performance tuning, memory optimization, and bundle size reduction.
+          </>,
+          <>
+            Enhanced ability to analyze product requirements and translate them into technical solutions.
+          </>,
+        ]
+      },
+      {
+        company: "Espirits Technologies Pvt Ltd.",
+        timeframe: "Feb 2025 -Present",
+        role: "React Native, React.js & Next.js Developer",
+        achievements: [
+          <>
+            Advanced expertise in building scalable, production-grade React Native apps for both Android and iOS.
+          </>,
+          <>
+            Worked on maintaining large-scale codebases, managing complex navigation flows and legacy refactoring.
+          </>,
+          <>
+            Hands-on experience with CI/CD pipelines, Fastlane, automation, and app release workflows.
+          </>,
+          <>
+            Learned to lead feature development, coordinate with backend teams, and handle product requirements end-to-end.
+          </>,
+          <>
+            Strengthened communication in cross-functional teams (UI/UX, backend, QA, product).
+          </>,
+          <>
+            Learned how to manage full mobile release cycles including App Store & Play Store guidelines.
+          </>,
+          <>
+            Became skilled in mentoring juniors, conducting code reviews, and guiding best practices.
+          </>,
+        ]
       }
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
@@ -142,37 +184,39 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Sysytem Administration",
+        title: "Software Developer",
         description: (
-          <>Operating Systems: Windows Server, Linux (Ubuntu, CentOS), macOS</>,
-          <>Server Management: Active Directory, DNS, DHCP, IIS, Apache, Nginx</>,
-          <>Cloud Platforms: AWS, Microsoft Azure, Google Cloud</>,
-          <>Networking: LAN / WAN setup, VPN configuration, Firewall management, Network troubleshooting</>,
-          <>Virtualization: VMware, Hyper- V, Docker</>,
-          <>Monitoring Tools: Nagios, Zabbix, Grafana, CloudWatch</>,
-          <>Automation & Scripting: PowerShell, Bash, Python(basic automation scripts)</>,
-          <>Version Control & CI / CD: Git, Jenkins, GitHub Actions</>,
-          <>Database Management: MySQL, PostgreSQL, MS SQL Server</>,
-          <>Security: SSL / TLS configuration, Firewall & Endpoint Protection, Patch Management</>,
-          <>Backup & Recovery: Veeam, Acronis, Windows Backup Solutions</>,
-          <>IT Support Tools: ServiceNow, Jira, Remote Desktop Services</>
+          <>Frontend Frameworks: React.js, Next.js, React Native</>,
+          <>JavaScript & TypeScript: ES6+, async programming, modular architecture</>,
+          <>State Management: Redux, Redux Toolkit, Context API, Zustand</>,
+          <>UI Development: Responsive design, Flexbox, CSS Modules, Tailwind CSS</>,
+          <>Navigation & Routing: React Router, Next.js routing, React Navigation</>,
+          <>API Integration: REST APIs, GraphQL, Axios/Fetch, real-time data with WebSockets</>,
+          <>Mobile Development: Android & iOS builds, platform-specific components, native modules</>,
+          <>Performance Optimization: Memoization, virtualization, lazy loading, code splitting</>,
+          <>Testing: Jest, React Testing Library, unit & integration testing</>,
+          <>Build & Deployment: Vercel, Expo, Fastlane, Android/iOS release workflows</>,
+          <>DevOps & Tools: Git, GitHub Actions, CI/CD pipelines, Docker (basic)</>,
+          <>Backend Familiarity: Node.js, Express.js (for API development)</>,
+          <>Debugging Tools: Chrome DevTools, Flipper, React Native DevTools</>,
+          <>Animations & UX: React Native Reanimated, Gesture Handler, Framer Motion</>
         ),
         tags: [
           {
-            name: "System Administration",
+            name: "Software Developer",
             icon: "OS",
           },
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/image-02.webp",
+            src: "/images/projects/project-01/Development-Methodologies.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/projects/project-01/Custom-Software-Development.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -182,23 +226,31 @@ const about: About = {
       {
         title: "Key Skills & Tech Stack",
         description: (
-          <>Installation, configuration, and maintenance of Windows Server and Linux (Ubuntu, CentOS) environments.</>
+          <>Building high-performance web and mobile applications using React.js, Next.js, and React Native with a focus on clean architecture and great user experience.</>
         ),
         tags: [
           {
-            name: "Server & Infrastructure Management",
+            name: "Frontend Development",
             icon: "check",
           },
           {
-            name: "Cloud & Virtualization",
+            name: "React.js & Next.js",
             icon: "check",
           },
           {
-            name: "CI/CD & Version Control",
+            name: "React Native Apps",
             icon: "check",
           },
           {
-            name: "Backup & Disaster Recovery",
+            name: "API Integration",
+            icon: "check",
+          },
+          {
+            name: "State Management",
+            icon: "check",
+          },
+          {
+            name: "Performance Optimization",
             icon: "check",
           },
         ],
@@ -212,6 +264,7 @@ const about: About = {
           },
         ],
       },
+
     ],
   },
 };
